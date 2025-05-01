@@ -23,8 +23,8 @@ const Footer = () => {
           <div className="col-md-4 mb-3">
             <h5 className="fw-bold">Legal</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="footer-link">Privacy Policy</a></li>
-              <li><a href="#" className="footer-link">Terms of Service</a></li>
+              <li><a href="/privacy-policy" className="footer-link">Privacy Policy</a></li>
+              <li><a href="/terms-of-service" className="footer-link">Terms of Service</a></li>
             </ul>
           </div>
         </div>
