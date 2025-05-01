@@ -1,0 +1,17 @@
+/* src/pages/About.css */
+.about-page .img-fluid {
+    max-width: 100%; /* Ensures image doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  .mission-img, .value-img {
+    max-width: 80%; /* Adjust this percentage to your liking */
+    margin: 0 auto; /* Centers the image */
+  }
+  
+  @media (max-width: 767px) {
+    .mission-img, .value-img {
+      max-width: 90%; /* Makes images larger on smaller screens */
+    }
+  }
+  

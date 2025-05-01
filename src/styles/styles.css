@@ -1,0 +1,69 @@
+/* -----------------------------------
+   Navbar Styles
+----------------------------------- */
+
+/* Make navbar fixed at top */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; /* Ensure it stays above all other content */
+  padding: 10px 0; /* Add some padding for better spacing */
+}
+
+/* Space below fixed navbar */
+body {
+  padding-top: 80px; /* Adjust this if navbar height changes */
+}
+
+/* Navbar brand styles */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.8rem; /* Increase font size */
+  margin-right: 2rem;
+}
+
+/* Navbar link styles */
+.nav-link {
+  font-size: 1.2rem; /* Increase font size for better visibility */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar link hover effect */
+.nav-link:hover {
+  transform: scale(1.1);
+  color: #007bff; /* Blue color on hover */
+}
+
+/* Center the links and add equal space between them */
+.navbar-nav {
+  display: flex;
+  justify-content: space-between; /* Evenly distribute the links */
+  width: 100%;
+}
+
+/* Optional: Adjust spacing of links for larger screens */
+.nav-item {
+  flex: 1; /* Ensures equal width for all nav items */
+  text-align: center; /* Center the text within each nav item */
+}
+
+/* -----------------------------------
+   Form Styles
+----------------------------------- */
+
+/* Rounded input fields with shadow */
+input.form-control,
+textarea.form-control {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover animation */
+button.btn-primary {
+  transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}

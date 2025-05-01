@@ -1,0 +1,31 @@
+/* src/pages/Contact.css */
+
+.contact-page input,
+.contact-page textarea {
+  border-radius: 0.5rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.contact-page .social-links a {
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-page .social-links a:hover {
+  transform: scale(1.1);
+  color: #0d6efd !important;
+}
+
+.contact-page h2 {
+  color: #212529;
+}
+
+.contact-page .card {
+  background-color: #fff;
+  border-radius: 1rem;
+}

@@ -1,0 +1,133 @@
+/* Main Services Page Container */
+.services-page {
+  background: #f8f9fa;
+  padding-top: 0; /* Removed top padding to eliminate gap below navbar */
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
+  margin-top: 0; /* Ensure no margin on top */
+}
+
+/* Overlay effect */
+.services-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: -1;
+}
+
+/* Container to center and add space */
+.services-page .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Section title */
+.services-page h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Card styles */
+.services-page .card {
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.services-page .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Service Icon */
+.services-page .service-icon {
+  max-width: 70px;
+  margin: 0 auto 20px auto;
+  display: block;
+  height: auto;
+}
+
+/* Card Body */
+.services-page .card-body {
+  text-align: center;
+  padding: 30px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Card Title */
+.services-page .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* Card Text */
+.services-page .card-text {
+  color: #777;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive Layout */
+.services-page .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 767px) {
+  .services-page .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Bottom Padding for Service Section */
+.services-page .row:last-child {
+  margin-bottom: 60px;
+}
+
+/* Testimonials Section Styling */
+.services-page .text-center {
+  margin-top: 60px;
+}
+
+.services-page h4 {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.services-page p.text-muted {
+  font-size: 1.2rem;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* Add space between cards */
+.services-page .col-md-4 {
+  margin-bottom: 40px;
+}
+
+
+/* Disable hover animation on smaller screens */
+@media (max-width: 991px) {
+  .services-page .card:hover {
+    transform: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+}
